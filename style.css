@@ -1,95 +1,170 @@
-* {
+*{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	border-box: border-sizing;
 }
 
-
-div {
-  background-color: #e4f9ff;
+.profile-pic{
+	height: 100px;
+	width: 100px;
 }
 
-body{
-  margin: 0;
-  text-align: center;
-  font-family: "merriweather", serif;
-  font-size: 2em
-}   
-
-/* when its comes to font we cant display the same font in all the browsers and computers normaly by putting our font in the css file but there are ways through which we can do this through fom embbeding google font */
- */
-
-.head{
-  color:#66bfbf;
-  font-size: 5.625rem; 
-  line-height: 2;
-  margin: 50px auto 0 auto;
-  font-family: cursive;
+.first-cont{
+	width: 100%;
 }
 
-
-/*  16px=100px so 90px/16=562.5%{90px only}, 100%=1em */
-
+/*
+font-family: 'Nunito', sans-serif;
+font-family: 'Pacifico', cursive;
+*/
+p{
+  font-family: 'Nunito', sans-serif;
+}
 
 h2{
-   font-family: 'montserrat', san-serif;
-  font-size: 2.5rem;
-  color: #66bfbf;
-  font-weight: normal;
+  font-family: 'Nunito', sans-serif;
+  font-size: 33px;
+  color: #66BFBF;
 }
 
 h3{
-  font-family: 'montserrat', san-serif;
-  color: #11999e;
+  font-family: 'Nunito', sans-serif;
+  color: #66BFBF;
+  font-weight: 600;
 }
 
-.top-container{
-  background-color: #e4f9ff;
-  position: relative;
-  padding-top: 100px
-  
-  
+hr{
+  margin-top: 60px;
+  margin-bottom: 60px;
+	margin-left: 40%;
+  width: 5%;
+  border: 10px dotted #EAF6F6;
+  border-bottom: none;
 }
 
-.pro{
-  text-decoration: underline;
-  color: red;
+header{
+  display: inline-grid;
+  background-color: #EAF6F6;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-.t-cloud{
-  position: absolute;
-  right: 300px;
-  top: 50px;
+header span{
+  text-decoration: wavy;
+	color: rebeccapurple;
 }
 
-.b-cloud{
-  position: absolute;
-  left: 200px;
-  bottom: 300px;
+header h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  color: #66BFBF;
 }
 
+.imgs-header{
+  display: flex;
+  justify-content: center;
+}
+
+.img-cloud{
+  width: 10%;
+  height: 10%;
+  margin-right: 20px;
+}
+
+.img-cloud-with-sun{
+  width: 10%;
+  height: 10%;
+  margin-left: 20px;
+}
+
+.img-mountain{
+	margin-left: 25%;
+}
+
+/* about me section */
+
+.about-me{
+  margin-top: 40px;
+}
+
+.img-about-me{
+  border-radius: 50%;
+}
+
+
+/* my skills section */
 .skill-row{
-	width:50%;
-  margin:auto 100px auto 100px;
-	position:relative;
-	text-align:left;
-	line-height:2;
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
 }
 
-.skill1{
-	width:25%;
-	float: left;
-	margin-right: 30px;
-	
+.skill-row img{
+  width: 25%;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
-.web-dev{
-	width:25%;
-	float: right;
-	margin-left: 30px;
-	
+.img-code{
+  float: left;
 }
 
+.img-python{
+  float: right;
+	clear:left;
+}
 
+.img-interview{
+	height:120px;
+	width:120px;
+	float:left;
+}
 
+/* contact-me section */
 
+.contact-me h3{
+  margin-top: 20px;
+}
+
+.contact-me p{
+  margin-top: 40px;
+}
+
+.contact-me button{
+  margin-top: 40px;
+  background-color: #66BFBF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.contact-me button:hover{
+  background-color: #11CDD4;
+}
+
+/* footer */
+
+footer{
+  margin-top: 60px;
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #11999E;
+  font-family: 'Nunito', sans-serif;
+  margin: 10px 20px;
+}
+
+footer p{
+  margin: 25px 0 15px;
+  color: #EAF6F6;
+  font-size: 12px;
+}
